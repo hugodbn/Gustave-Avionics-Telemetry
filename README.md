@@ -30,13 +30,57 @@ The avionics system is responsible for:
 
 ### PCB Design
 
-Designed and routed the complete 4-layer avionics PCB plus designed witch another member a dedicated PCB for each deployed CansSat using EasyEDA
+Designed and routed the complete 4-layer avionics PCB for the rocket using EasyEDA, with component choices cross-checked with the team. also contributed to validating the component selection for the CanSat PCBs, designed by another team member.
 
 ### Component Selection & Integration
 
-Selected and integrated LoRa, DW1000 UWB, GPS, IMU and barometric sensors for real-time flight telemetry and CanSat Localization.
+Contributed to selecting LoRa, DW1000 UWB, GPS, IMU and barometric sensors, validated collectively with the team, for real-time flight telemetry and CanSat Localization.
 
 ### Embedded Firmware
+
+Developed firmware using the Arduino framework on Teensy 4.1 (ARM Cortex-M7) for both the rocket and CanSat boards, implementing UART, SPI and I2C communication with onboard peripherals and PWM-based CanSat release at a precise time.
+
+### Data Logging
+
+Implemented onboard SD card logging of UWB ranging and sensor data during flight enabling post-flight trajectory reconstruction and fixed race condition in the logging firmware to ensure data integrity.
+
+### Wireless Communication
+
+Configured the DW1000 UWB ranging link between the rocket and CanSats on Channel 5(110 kbps, PRF 64 MHz) setting the TX power register per Qorvo/Decawave's manufacturer-certified reference values (Table 20, DW1000 User Manual) to ensure regulatory spectral compliance.
+
+## Technologies
+
+- MCU: Teensy 4.1 (ARM Cortex-M7)
+- PCB Design: EasyEDA
+- Languages: C, C++
+- Framework: Arduino
+- Protocols: UART, SPI, I2C, PWM
+- Wireless: LoRa, DW1000 UWB
+- Sensors: GPS, IMU, Barometric sensor
+
+## Repository Structure
+```
+Firmware/
+PCB/
+Documentation/
+Images/
+README.md
+```
+## Roadmap
+
+- [X] PCB design
+- [X] Component selection
+- [X] Firmware development
+- [X] Sensor integration
+- [ ] LoRa range testing (scheduled February)
+- [ ] Hardware Validation
+- [ ] Flight testing
+- [ ] Launch (March 2027)
+
+## License
+
+This repository is intended for portfolio purposes only.
+
 
 
 
