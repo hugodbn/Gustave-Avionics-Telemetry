@@ -1,22 +1,22 @@
 # Gustave Avionics & Telemetry System
 
-Experimental rocket avionics platform develop within AeroIPSA.
+Experimental rocket avionics platform developed within AeroIPSA.
 
 
 ## Overview
 
-Gustave is an experimental rocket developed within AeroIPSA, IPSA's student aerospace association, with a planned in march 2027.
+Gustave is an experimental rocket developed within AeroIPSA, IPSA's student aerospace association, with a planned launch in march 2027.
 
 The avionics system is responsible for:
 - Flight telemetry
 - CanSat deployment
-- UWB-Based positioning between rocket and CanSats logged for post-flight trajectory reconstruction
-- Sensor Acquisition
+- UWB-based positioning between rocket and CanSats logged for post-flight trajectory reconstruction
+- Sensor acquisition
 - Onboard data logging
 
 ## Features
 
-- 4-layer avionics PCB (GND-5V-5V-GND stack up) plus a dedicated PCB for each CansSat
+- 4-layer avionics PCB (GND-5V-5V-GND stack up) plus a dedicated PCB for each CanSat
 - ARM Cortex-M7 firmware (Teensy 4.1)
 - LoRa wireless telemetry
 - DW1000 UWB ranging
@@ -30,11 +30,11 @@ The avionics system is responsible for:
 
 ### PCB Design
 
-Designed and routed the complete 4-layer avionics PCB for the rocket using EasyEDA, with component choices cross-checked with the team. also contributed to validating the component selection for the CanSat PCBs, designed by another team member.
+Designed and routed the complete 4-layer avionics PCB for the rocket using EasyEDA, with component choices cross-checked with the team. Also contributed to validating the component selection for the CanSat PCBs, designed by another team member.
 
 ### Component Selection & Integration
 
-Contributed to selecting LoRa, DW1000 UWB, GPS, IMU and barometric sensors, validated collectively with the team, for real-time flight telemetry and CanSat Localization.
+Contributed to selecting LoRa, DW1000 UWB, GPS, IMU and barometric sensors, validated collectively with the team, for real-time flight telemetry and CanSat localization.
 
 ### Embedded Firmware
 
@@ -42,11 +42,11 @@ Developed firmware using the Arduino framework on Teensy 4.1 (ARM Cortex-M7) for
 
 ### Data Logging
 
-Implemented onboard SD card logging of UWB ranging and sensor data during flight enabling post-flight trajectory reconstruction and fixed race condition in the logging firmware to ensure data integrity.
+Implemented onboard SD card logging of UWB ranging and sensor data during flight enabling post-flight trajectory reconstruction and fixed a race condition in the logging firmware to ensure data integrity.
 
 ### Wireless Communication
 
-Configured the DW1000 UWB ranging link between the rocket and CanSats on Channel 5(110 kbps, PRF 64 MHz) setting the TX power register per Qorvo/Decawave's manufacturer-certified reference values (Table 20, DW1000 User Manual) to ensure regulatory spectral compliance.
+Configured the DW1000 UWB ranging link between the rocket and CanSats on Channel 5 (110 kbps, PRF 64 MHz) setting the TX power register per Qorvo/Decawave's manufacturer-certified reference values (Table 20, DW1000 User Manual) to ensure regulatory spectral compliance.
 
 ## Technologies
 
