@@ -2,6 +2,7 @@
 
 Experimental rocket avionics platform developed within AeroIPSA.
 
+![Images](PCB-3D-Experience.png)
 
 ## Overview
 
@@ -60,10 +61,10 @@ Configured the DW1000 UWB ranging link between the rocket and CanSats on Channel
 
 ## Repository Structure
 ```
-Firmware/
-PCB/
-Documentation/
-Images/
+Firmware
+PCB
+Documentation
+Images
 README.md
 ```
 ## Roadmap
