@@ -88,6 +88,7 @@ Documentation
 Firmware
 Hardware
 Images
+LICENSE
 README.md
 ```
 ## Roadmap
