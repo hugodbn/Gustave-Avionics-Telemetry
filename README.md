@@ -76,9 +76,9 @@ Configured the DW1000 UWB ranging link between the rocket and CanSats on Channel
 
 ## Repository Structure
 ```
-Firmware
-PCB
 Documentation
+Firmware
+Hardware
 Images
 README.md
 ```
