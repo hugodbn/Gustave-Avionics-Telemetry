@@ -3,7 +3,8 @@
 Experimental rocket avionics platform developed within AeroIPSA.
 
 <p align="center">
-  <img src="Images/PCB-3D-Experience.png" alt="Vue 3D du PCB" width="700">
+  <img src="Images/pcb-top-3d.png" alt="PCB Top View" width="48%">
+  <img src="Images/pcb-bottom-3d.png" alt="PCB Bottom View" width="48%">
 </p>
 
 ## Overview
@@ -47,6 +48,13 @@ The avionics system is responsible for:
 ### PCB Design
 
 Designed and routed the complete 4-layer avionics PCB for the rocket using EasyEDA, with component choices cross-checked with the team. Also contributed to validating the component selection for the CanSat PCBs, designed by another team member.
+
+### Hardware & Schematics Overview
+
+<p align="center">
+  <img src="Images/pcb-layout-2d.png" alt="PCB 2D Layout" width="48%">
+  <img src="Images/schematic-overview.png" alt="Schematic Overview" width="48%">
+</p>
 
 ### Component Selection & Integration
 
