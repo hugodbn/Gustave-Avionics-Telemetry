@@ -33,14 +33,14 @@ The avionics system is responsible for:
 
 | Subsystem / Sensor | Interface | Role / Description |
 | :--- | :--- | :--- |
-| **Teensy 4.1** (ARM Cortex-M7) | — | Main flight computer & data processing |
-| **LSM6DSOX** | SPI / I2C | High-rate acceleration & angular velocity tracking |
-| **BMP390** | I2C | High-precision barometric altitude estimation |
-| **u-blox GNSS** | UART | Absolute positioning & GPS time synchronization |
-| **DW1000 UWB** | SPI | High-precision ranging & CanSat relative tracking |
-| **LoRa Transceiver** | SPI | Long-range down-link ground telemetry |
+| **Microcontroller (MCU)** | — | Main flight computer & data processing |
+| **IMU (6-DoF)** | SPI / I2C | High-rate acceleration & angular velocity tracking |
+| **Pressure Sensor** | I2C | High-precision barometric altitude estimation |
+| **GPS / GNSS Module** | UART | Absolute positioning & GPS time synchronization |
+| **UWB Module** | SPI | High-precision ranging & CanSat relative tracking |
+| **LoRa Module** | SPI | Long-range down-link ground telemetry |
 | **MicroSD Card** | SDIO / SPI | High-frequency sensor logging & redundancy |
-| **CanSat Release** | PWM | Timed pyrotechnic/servo deployment |
+| **CanSat Release System** | PWM | Timed deployment trigger |
 
 ## My contributions
 
