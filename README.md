@@ -2,7 +2,9 @@
 
 Experimental rocket avionics platform developed within AeroIPSA.
 
-![Images](PCB-3D-Experience.png)
+<p align="center">
+  <img src="Images/PCB-3D-Experience.png width="700">
+</p>
 
 ## Overview
 
