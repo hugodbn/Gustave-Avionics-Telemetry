@@ -3,8 +3,8 @@
 Experimental rocket avionics platform developed within AeroIPSA.
 
 <p align="center">
-  <img src="Images/pcb-top-3d.png" alt="PCB Top View" width="48%">
-  <img src="Images/pcb-bottom-3d.png" alt="PCB Bottom View" width="48%">
+  <img src="Images/PCB-3D-Experience.png" alt="PCB Top View" width="48%">
+  <img src="Images/PCB-bottom-3d.png" alt="PCB Bottom View" width="48%">
 </p>
 
 ## Overview
@@ -52,7 +52,7 @@ Designed and routed the complete 4-layer avionics PCB for the rocket using EasyE
 ### Hardware & Schematics Overview
 
 <p align="center">
-  <img src="Images/pcb-layout-2d.png" alt="PCB 2D Layout" width="48%">
+  <img src="Images/PCB-layout-2d.png" alt="PCB 2D Layout" width="48%">
   <img src="Images/schematic-overview.png" alt="Schematic Overview" width="48%">
 </p>
 
