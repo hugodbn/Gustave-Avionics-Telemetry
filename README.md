@@ -34,9 +34,9 @@ The avionics system is responsible for:
 | Subsystem / Sensor | Interface | Role / Description |
 | :--- | :--- | :--- |
 | **Microcontroller (MCU)** | — | Main flight computer & data processing |
-| **IMU (6-DoF)** | SPI / I2C | High-rate acceleration & angular velocity tracking |
+| **IMU** | SPI / I2C | High-rate acceleration & angular velocity tracking |
 | **Pressure Sensor** | I2C | High-precision barometric altitude estimation |
-| **GPS / GNSS Module** | UART | Absolute positioning & GPS time synchronization |
+| **GPS  Module** | UART | Absolute positioning & GPS time synchronization |
 | **UWB Module** | SPI | High-precision ranging & CanSat relative tracking |
 | **LoRa Module** | SPI | Long-range down-link ground telemetry |
 | **MicroSD Card** | SDIO / SPI | High-frequency sensor logging & redundancy |
