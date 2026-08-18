@@ -8,7 +8,7 @@ Experimental rocket avionics platform developed within AeroIPSA.
 
 ## Overview
 
-Gustave is an experimental rocket developed within AeroIPSA, IPSA's student aerospace association, with a planned launch in march 2027.
+Gustave is an experimental rocket developed within AeroIPSA, IPSA's student aerospace association, with a planned launch in March 2027.
 
 The avionics system is responsible for:
 - Flight telemetry
