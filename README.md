@@ -29,6 +29,19 @@ The avionics system is responsible for:
 - SD card data logging
 - PWM-based CanSat release at a precise time
 
+### System Architecture & Communication Buses
+
+| Subsystem / Sensor | Interface | Role / Description |
+| :--- | :--- | :--- |
+| **Teensy 4.1** (ARM Cortex-M7) | — | Main flight computer & data processing |
+| **LSM6DSOX** | SPI / I2C | High-rate acceleration & angular velocity tracking |
+| **BMP390** | I2C | High-precision barometric altitude estimation |
+| **u-blox GNSS** | UART | Absolute positioning & GPS time synchronization |
+| **DW1000 UWB** | SPI | High-precision ranging & CanSat relative tracking |
+| **LoRa Transceiver** | SPI | Long-range down-link ground telemetry |
+| **MicroSD Card** | SDIO / SPI | High-frequency sensor logging & redundancy |
+| **CanSat Release** | PWM | Timed pyrotechnic/servo deployment |
+
 ## My contributions
 
 ### PCB Design
