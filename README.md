@@ -97,6 +97,7 @@ README.md
 - [X] Component selection
 - [X] Firmware development
 - [X] Sensor integration
+- [ ] Full firmware integration testing (all components assembled together)
 - [ ] LoRa range testing (scheduled February)
 - [ ] Hardware Validation
 - [ ] Flight testing
