@@ -8,12 +8,12 @@ This folder contains the embedded firmware for the Gustave rocket avionics and i
 Firmware/
 ├── Rocket_main.ino
 ├── CanSat_main.ino
-├── README.md
+└── README.md
 ```
 
 ## Rocket vs CanSat
 
-The rocket and the CanSats run separate firmware, since they don't do exactly the same job. All CanSats share the same code — each physical CanSat just gets a different `CANSAT_ID` flashed in, used both for UWB ranging and to tag its data on the SD card.
+The rocket and the CanSats run separate firmware, since they don't do exactly the same job. All CanSats share the same code, each physical CanSat just gets a different `CANSAT_ID` flashed in, used both for UWB ranging and to tag its data on the SD card.
 
 ## What the firmware does
 
@@ -22,7 +22,7 @@ The rocket and the CanSats run separate firmware, since they don't do exactly th
 - Acts as the UWB anchor, ranging with up to 6 CanSats (asymmetric two-way ranging, compensated for clock drift)
 - Sends telemetry over LoRa
 - Logs everything to two SD files in parallel (main + backup) so we don't lose data if one write fails
-- Detects launch via a physical jack pin removed at liftoff, and triggers the CanSat ejection motors once the "ready" switch is set
+- Detects launch via a physical jack pin removed at liftoff. In the current test version, CanSat ejection motors are triggered by a manual "ready" switch; the final logic will fire the motors after a precise delay computed from the rocket's internal timer, following acceleration-based launch detection.
 - Detects landing from a combination of low acceleration + low altitude sustained for 10 seconds, then stops logging
 
 **CanSat:**
@@ -45,4 +45,4 @@ The code is written and each part has been tested individually (sensors, UWB ran
 
 ## Notes
 
-Built using the Arduino framework. No RTOS — just a straightforward loop-based structure adapted to what a Teensy 4.1 can handle for this kind of mission.
+Built using the Arduino framework. No RTOS, just a straightforward loop-based structure adapted to what a Teensy 4.1 can handle for this kind of mission.
