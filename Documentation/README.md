@@ -12,8 +12,7 @@ The DW1000 was selected primarily because it had already been used within AéroI
 - Reduce bring-up risk, since the module and its basic driver behavior were already familiar to the team.
 - Focus engineering effort on the ranging implementation (asymmetric two-way ranging) rather than debugging an unfamiliar transceiver from scratch.
 
-The RF configuration itself (Channel 5, 110 kbps, PRF 64 MHz, manual TX power set per Table 20 of the DW1000 User Manual) was defined directly from Qorvo/Decawave's official documentation, not inherited from a previous project.
-
+> **Note on RF Configuration:** While the hardware selection leveraged association heritage, the RF parameters (**Channel 5**, **110 kbps**, **PRF 64 MHz**, and manual TX power calibration per **Table 20 of the DW1000 User Manual**) were derived directly from official Qorvo/Decawave specifications to ensure strict regulatory spectral compliance.
 ---
 
 ## Official Reference Documentation
