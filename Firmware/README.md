@@ -27,7 +27,7 @@ The rocket and the CanSats run separate firmware, since they don't do exactly th
 
 **CanSat:**
 - Detects its own launch by watching for a sustained acceleration spike (not a fixed altitude/time — it reacts to the actual liftoff), then waits a set delay before triggering separation. The delay is currently a test value and will be tuned later based on actual flight timing.
-- Once the delay has elapsed, triggers a servo to physically separate from its release mechanism
+- Once the delay has elapsed, triggers a servo that splits the CanSat into two halves
 - Reads GPS, IMU, and barometer at 10 Hz
 - Responds to the rocket's UWB ranging requests and reports back its own ID
 - Logs its own data to the SD card and sends it over LoRa
