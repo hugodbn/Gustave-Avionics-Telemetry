@@ -12,6 +12,7 @@ Experimental rocket avionics platform developed within AeroIPSA.
 Gustave is an experimental rocket developed within AeroIPSA, IPSA's student aerospace association, with a planned launch in March 2027.
 
 The avionics system is responsible for:
+
 - Flight telemetry
 - CanSat deployment
 - UWB-based positioning between rocket and CanSats logged for post-flight trajectory reconstruction
@@ -28,25 +29,24 @@ The avionics system is responsible for:
 - IMU integration
 - Barometric altitude measurement
 - SD card data logging
-- PWM-based CanSat release at a precise time
+- PWM-based CanSat release, triggered after acceleration-based launch detection (currently tested via a manual switch, with the final logic computing a precise delay from the rocket's internal timer); once released, each CanSat splits into two halves via a servo after a set delay
 
 ### System Architecture & Communication Buses
 
 | Subsystem / Sensor | Interface | Role / Description |
 | :--- | :--- | :--- |
 | **Microcontroller (MCU)** | — | Main flight computer & data processing |
-| **IMU** | SPI / I2C | High-rate acceleration & angular velocity tracking |
+| **IMU** | I2C | High-rate acceleration & angular velocity tracking |
 | **Pressure Sensor** | I2C | High-precision barometric altitude estimation |
-| **GPS  Module** | UART | Absolute positioning & GPS time synchronization |
+| **GPS Module** | UART | Absolute positioning & GPS time synchronization |
 | **UWB Module** | SPI | High-precision ranging & CanSat relative tracking |
 | **LoRa Module** | SPI | Long-range down-link ground telemetry |
 | **MicroSD Card** | SDIO / SPI | High-frequency sensor logging & redundancy |
-| **CanSat Release System** | PWM | Timed deployment trigger |
+| **CanSat Release System** | PWM | Acceleration-triggered deployment |
 
 ## My contributions
 
 ### PCB Design
-
 Designed and routed the complete 4-layer avionics PCB for the rocket using EasyEDA, with component choices cross-checked with the team. Also contributed to validating the component selection for the CanSat PCBs, designed by another team member.
 
 ### Hardware & Schematics Overview
@@ -57,19 +57,15 @@ Designed and routed the complete 4-layer avionics PCB for the rocket using EasyE
 </p>
 
 ### Component Selection & Integration
-
 Contributed to selecting LoRa, DW1000 UWB, GPS, IMU and barometric sensors, validated collectively with the team, for real-time flight telemetry and CanSat localization.
 
 ### Embedded Firmware
-
-Developed firmware using the Arduino framework on Teensy 4.1 (ARM Cortex-M7) for both the rocket and CanSat boards, implementing UART, SPI and I2C communication with onboard peripherals and PWM-based CanSat release at a precise time.
+Developed firmware using the Arduino framework on Teensy 4.1 (ARM Cortex-M7) for both the rocket and CanSat boards, implementing UART, SPI and I2C communication with onboard peripherals, and PWM-based CanSat release triggered after acceleration-based launch detection.
 
 ### Data Logging
-
 Implemented onboard SD card logging of UWB ranging and sensor data during flight enabling post-flight trajectory reconstruction and fixed a race condition in the logging firmware to ensure data integrity.
 
 ### Wireless Communication
-
 Configured the DW1000 UWB ranging link between the rocket and CanSats on Channel 5 (110 kbps, PRF 64 MHz) setting the TX power register per Qorvo/Decawave's manufacturer-certified reference values (Table 20, DW1000 User Manual) to ensure regulatory spectral compliance.
 
 ## Technologies
@@ -83,6 +79,7 @@ Configured the DW1000 UWB ranging link between the rocket and CanSats on Channel
 - Sensors: GPS, IMU, Barometric sensor
 
 ## Repository Structure
+
 ```
 Documentation
 Firmware
@@ -91,6 +88,7 @@ Images
 LICENSE
 README.md
 ```
+
 ## Roadmap
 
 - [X] PCB design
@@ -106,22 +104,6 @@ README.md
 ## License
 
 This repository is provided for portfolio and demonstration purposes only.
-
 The hardware designs, firmware, documentation and other project materials may not be copied, modified or redistributed without prior permission from the author.
 
 © 2026 Hugo Debionne. All rights reserved.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
