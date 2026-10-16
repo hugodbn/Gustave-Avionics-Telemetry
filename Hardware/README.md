@@ -7,7 +7,7 @@ This directory contains the hardware design files, schematics, and bill of mater
 | Parameter | Specification |
 | :--- | :--- |
 | **EDA Tool** | EasyEDA |
-| **Layer Count** | 4-layer stack-up (GND – 5V – 5V – GND) |
+| **Layer Count** | 4-layer stack-up (GND – GND – GND – GND) |
 | **Board Dimensions** | 120.65 mm x 79.248 mm |
  
 ---
