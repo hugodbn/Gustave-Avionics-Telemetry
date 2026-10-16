@@ -21,7 +21,7 @@ To keep this repository lightweight, reference datasheets are linked directly to
 
 - **UWB Transceiver:** [Qorvo / Decawave DW1000 User Manual](https://www.qorvo.com/products/p/DW1000)
 - **Microcontroller:** [Teensy 4.1 Technical Specifications (PJRC)](https://www.pjrc.com/store/teensy41.html)
-- **Barometric Altimeter:** [Bosch Sensortec BMP390 Datasheet](https://www.bosch-sensortec.com/products/environmental-sensors/pressure-sensors/bmp390/)
+- **Barometric Altimeter:** [TE connectivity MS561101BA03-50 Datasheet](https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FMS5611-01BA03%7FB%7Fpdf%7FEnglish%7FENG_DS_MS5611-01BA03_B.pdf%7FCAT-BLPS0036)
 - **Inertial Measurement Unit:** [STMicroelectronics LSM6DSOX Datasheet](https://www.st.com/en/mems-and-sensors/lsm6dsox.html)
 
 ---
