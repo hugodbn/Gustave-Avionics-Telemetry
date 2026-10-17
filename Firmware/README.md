@@ -34,7 +34,7 @@ The rocket and the CanSats run separate firmware, since they don't do exactly th
 
 ## Notes on hardware interfacing
 
-- **I2C**: BMP390 (barometer) and LSM6DSOX (IMU)
+- **I2C**: MS561101BA03-50 (barometer) and LSM6DSOX (IMU)
 - **SPI**: DW1000 (UWB), LoRa module, SD card
 - **UART**: GNSS/GPS module
 - **PWM**: rocket-side ejection motors (`analogWrite`) and CanSat separation servo (`Servo.write`)
